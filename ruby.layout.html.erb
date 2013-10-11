@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <!-- 
+    This is a Blueprint site: http://www.inventivelabs.com.au/blueprint
+    Blueprint is a content management system (CMS) designed in Melbourne, 
+    Australia, by Inventive Labs.
+    -->
+    <meta charset="utf-8">
+    <link rel="image_src" href="/static/images/warm_cover_tiny.jpg" /> 
+    <link rel="stylesheet" href="/static/style.css" type="text/css" />
+    <title><%= "#{@page_title || @page.title} &middot; #{@site.name}" %></title>
+    <%= javascript_include_tag('prototype') %>
+    <%= javascript_include_tag('effects') %>    
+    <%= yield :head %>
+    
+    <script type="text/javascript">    
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-5515969-1']);
+      _gaq.push(['_trackPageview']);
+    
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();    
+    </script>
+  </head>
+  <body>
+    
+    <div id="whitebox">
+       <div id="banner">&nbsp;</div>
+      <div id="nav">
+        <ul>
+          <% Page.protozoans.each do |page| %>
+            <%= content_tag(
+              "li",
+              link_to_page(page.title, page),
+              :class => page == @page ? "active" : nil
+            ) %>
+          <% end %>
+         </ul>
+      </div>
+    
+      <div id="leftcolumn">
+        <%= ingredient 'paypal' %>
+      </div>
+
+      <div id="centrecolumn">
+       <%= yield %>
+      </div>
+
+      <div id="rightcolumn"> 
+        <%= ingredient 'upcoming', 'gigs' %>
+        
+        <%= ingredient 'mailing_list' %>
+      </div>  
+    </div>
+  
+    <div id="footer">&copy; <%= Date.today.year %> Liz Stringer</div>
+
+    <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+    var pageTracker = _gat._getTracker("UA-5515969-1");
+    pageTracker._trackPageview();
+    </script>
+    
+  </body>
+</html>
+​

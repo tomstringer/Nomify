@@ -1,0 +1,632 @@
+/*-----------------------------------------------------
+              >> Blueprint Default CSS <<
+              
+This is the default Blueprint stylesheet. You're free
+to modify it however you wish, or replace it entirely.              
+              
+-----------------------------------------------------*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+
+body {
+  padding: 0px;
+  font-family: "Gill Sans", helvetica, arial, sans-serif;
+  background: #d8f3fe url(/static/images/line_long.jpg) top left repeat-y;   
+}
+
+a img {
+  border: none;
+}
+
+a, div.link {
+  text-decoration:none;
+  color:#B15A7C;
+  cursor:pointer;
+}
+
+a:hover, div.link:hover {
+  color:#a90024;
+  cursor:pointer;  
+}
+
+p a {
+  text-decoration:underline;
+}
+
+p.more {
+  text-align:right;  
+}
+
+p.more a {
+  font-family: "Gill Sans", helvetica, arial, sans-serif;
+  font-weight:bold;
+  text-decoration:none;
+}
+
+a.more {
+  font-family:"Gill Sans";
+  text-transform:uppercase;
+  font-weight:bold;
+  text-decoration:none;
+}
+
+.footer a {
+  text-decoration:none;
+}
+
+object.youtube {
+  margin:24px auto;
+  height:350px;
+  padding:5px 36px;
+  text-align:center;
+}
+
+/*-----------------------------------------------------
+                     >> Layout <<
+-----------------------------------------------------*/
+
+.top {
+  border-bottom:1px solid #d6eae8;
+  position:relative;
+  width: 500px;
+}
+
+.container {
+  width:880px;
+  overflow:hidden;
+}
+
+.first {
+  width: 570px;
+  float: left;
+  margin: 20px 12px 20px 20px;  
+  padding: 18px 28px 30px 20px;  
+  border-right: 1x solid #AEBFBF;
+}
+
+.second {
+  background: url(/static/images/sidebar.jpg) right 20px no-repeat;
+  margin: 72px 0;
+  float: left;
+  text-align: left;
+  padding: 25px 0 0 10px;
+  width: 190px;
+}
+
+.content {
+  min-height:300px;  
+}
+
+.wide {
+  width:100%;
+  float:none;
+}
+
+.sidebar {
+  float:left;
+  margin-left:20px;
+  width:220px;
+  font-size:90%;
+  color:#003153;
+  margin-bottom:40px;
+}
+
+
+/*-----------------------------------------------------
+                  >> Navigation <<
+-----------------------------------------------------*/
+ul.globalNav, ul.globalNav li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+ }
+ul.globalNav {
+  width:100%;
+}
+
+ul.globalNav li {
+   margin:0;
+   padding:0;
+}
+
+ul.globalNav li a {
+  font-family:georgia;
+  text-transform:uppercase;
+  letter-spacing:1px;
+  font-size:11px;
+  color:#3c4a55;
+  padding:0px;
+  text-decoration: none;
+}
+
+div.link {
+  display:inline;
+  font-size:12px;
+  line-height:0;
+  margin:0;
+  padding:0;
+}
+/*-----------------------------------------------------
+                  >> Basic Typography <<
+-----------------------------------------------------*/
+
+em, i {
+  font-style:italic;
+}
+
+h1, h2, h3, h4 {
+  text-align:center;
+}
+
+h1 {
+  font-family:georgia, "Palatino";
+  font-size:18px;
+  text-transform:uppercase;
+  letter-spacing:2px;
+  line-height:24px;
+  margin-bottom:24px;
+  color:#414550;
+}
+h1.masthead a {
+  display: block;
+  text-indent: -5000px;
+  height: 59px;
+  background: url(/static/images/nomify.png) center top no-repeat;
+}
+
+h2 {
+  line-height:24px;
+}
+.second h2 {
+  text-align: left;
+  margin-top: 24px;
+  color:#374454;  
+}
+h3 {
+/*  color:#B15A7C;*/
+  color:#374454;
+  line-height:24px;
+  margin-top:24px;
+  font-style:italic;
+}
+
+h4 {
+  font-size:90%;
+  line-height:24px;
+}
+
+p {
+  font-family: Georgia, "Palatino", "Palatino Linotype", Georgia, serif;
+  font-size:14px;
+  line-height:24px;
+  margin-bottom:24px;
+  color:#444;
+}
+
+p small {
+  font-size:12px;
+}
+
+ul, dl, ol {
+  font-family:Georgia, Palatino, "Palatino Linotype", Georgia, serif;  
+  font-size:14px;  
+  width:350px;
+  margin:0 auto;
+  margin-bottom:24px;
+  list-style-type:disc;
+}
+
+li, dd, dd {
+  line-height:24px;
+  color:#444;
+}
+
+blockquote {
+  padding:20px 30px;
+}
+blockquote p {
+  font-size:110%;
+  font-family: "Gill Sans", Helvetica, Arial, sans-serif;
+  color:#003153;
+  padding:0;
+  margin:0;
+  width:100% ! important;
+}
+
+blockquote cite {
+  font-style:italic;
+  font-size:90%;
+}
+
+.sidebar p {
+  font-family: "Gill Sans", Helvetica, Arial, sans-serif;
+  line-height:120%;
+}
+
+p.footer {
+  font-family: "Gill Sans", Helvetica, Arial, sans-serif;
+  font-size:12px;  
+  margin-bottom:0;
+  margin-top: 4px;
+  width:100%;
+}
+
+/*-----------------------------------------------------
+            >> Standard Image Handling <<
+ All images need to have heights in multiples of 24px
+-----------------------------------------------------*/
+
+img.small {
+  float:left;
+  width:50px;
+  margin:0 8px 3px 0;
+  border:1px solid #eee;
+  padding:4px;
+  background:#fff;
+}
+img.medium {
+  float:left;
+  width:200px;
+  margin:-12px 12px 0 -12px;
+  background:#fff;    
+  height:312px;
+  border:1px solid #eee;
+  padding:11px;
+}
+
+img.large {
+  width:500px;
+  margin:0 -12px;
+  border:1px solid #eee;
+  padding:11px;
+  background:#fff;  
+  height:336px;
+}
+
+img.avatar {
+  width:64px;
+  height:64px;
+}
+
+
+
+/*-----------------------------------------------------
+                     >> Blog & News <<
+-----------------------------------------------------*/
+
+.post {
+  margin-bottom:24px;
+}
+
+.post p.divider {
+  text-align:center;
+}
+
+.date {
+  font-family: "Gill Sans", Helvetica, Arial, sans-serif;  
+  font-size:12px;
+  line-height:0px;
+  color:#000;
+  padding-left:4px;
+}
+
+p.numberComments {
+  font-family: "Gill Sans", Helvetica, Arial, sans-serif;
+  font-size:12px;
+  text-align:right;
+  margin-top:24px;
+  margin-bottom: 0px;
+  text-transform:none;
+}
+form.print {
+  font-size: 12px;
+  line-height:24px;
+  margin: 0;
+  color:#444;  
+  text-align: right;
+}
+
+.pagination {
+  margin-top:15px;
+  width:90%;
+  text-align:right;
+  font-size:11px;
+}
+
+.pagination ul {
+  margin-top:4px;
+  float:right;
+  list-style:none;
+  font-size:11px;
+}
+
+.pagination ul li {
+  border-right:1px solid #444;
+  padding:0 4px;
+  float:left;
+}
+
+div.bio {
+  width:100%;
+  padding:14px 12px 12px 12px;
+  height:70px;
+  position:relative;
+  overflow:hidden;
+  margin:0 -11px 48px -11px;
+  background-color:#E6F5F3;
+}
+
+div.bio img {
+  float:left;
+  margin:0 12px 0 0;
+  border:1px solid #eee;
+}
+
+div.bio p {
+  float:left;
+  margin-top:8px;
+  width:390px;
+  font-size:13px;
+  line-height:16px;    
+  font-family: "Gill Sans", Helvetica, Arial, sans-serif;  
+}
+
+div.contributors {
+  margin:48px 0;
+  padding-bottom:30px;
+}
+
+div.contributors img {
+  float:left;
+  margin:0 12px 5px 0;
+}
+
+
+div.recent, div.tags {
+  text-align:center;
+}
+
+.recent ul, .archive ul, ul.links, ul.tagCloud {
+  list-style-type:none;
+}
+
+.archive ul, ul.links, ul.tagCloud {
+  width:100%;
+  text-align:left;
+}
+
+.archive ul {
+  text-align:center;
+}
+/*-----------------------------------------------------
+                     >> Comments <<
+-----------------------------------------------------*/
+
+/* Comment form */
+
+.date, .hidePreview {
+  font-size:70%;
+  color:#000;
+  padding-left:4px;
+}
+form.comments {
+  background:#eee;
+  padding:9px 10px;
+  position:relative;
+  margin:48px -10px 0 -10px;
+}
+
+form.comments h3 {
+  margin:0;
+  color:#444;
+}
+
+form.comments div.details {
+  float:left;
+  width:40%;
+  padding:0;
+}
+
+.details input {
+  margin:0;
+  width:100%;
+  font-size:14px;
+}
+
+form.comments div.comment {
+ float:right;
+ width:54%;
+ margin-bottom:0px;
+ padding-left:0;
+ border:0;
+}
+
+.comment textarea {
+  width:100%;
+}
+
+form.comments small {
+  float:right;
+  font-size:11px;
+  display:block;
+  margin-top:0;
+}
+
+form.comments p.submit {
+  padding-top:18px;
+  clear:both;
+  margin-bottom:0;
+}
+
+#commentPreview p {
+  color:#B15A7C;
+}
+
+
+/* Comment display */
+
+h2.commentsHeader {
+  margin-top:48px;
+  font-size:16px;
+  line-height:24px;
+}
+
+h4.commentsPreview {
+  text-align:left;
+}
+
+.preview img {
+  margin:0 auto;
+}
+
+div.comment {
+  color:#374454;  
+  margin-bottom:24px;
+  border-left:1px solid #ccc;
+  padding-left:10px;
+  margin-left:1px;
+}
+
+div.comment a {
+  text-decoration:none;
+}
+
+div.comment p {
+  color:#374454;
+  font-family:"Gill Sans", helvetica, arial, sans-serif;
+  font-size:13px;
+  line-height:24px;  
+  width:75%;
+  margin-bottom:24px;
+}
+
+p.commenter {
+  font-size:13px;
+  line-height:24px;
+  margin-bottom:0px ! important;
+  color:#374454;
+}
+
+.numberComments {
+  margin-top:30px;
+  text-transform:uppercase;
+}
+
+
+/*-----------------------------------------------------
+                     >> Events <<
+-----------------------------------------------------*/
+
+.event {
+  margin-bottom:50px;
+}
+
+
+
+/*-----------------------------------------------------
+                  >> Contact Form <<
+-----------------------------------------------------*/
+
+form {
+  padding:0;
+}
+
+fieldset {
+  padding:0;
+}
+
+label {
+  display:block;
+  font-size:11px;
+  margin-top:8px;
+  line-height:12px;
+}
+
+fieldset input {
+  width:85%;
+  font-size:15px;
+  margin-bottom:10px;
+  font-family:"Gill Sans", helvetica, arial, sans-serif ! important;
+
+}
+
+fieldset textarea {
+  width:100%;
+  font-size:15px;
+  line-height:130%;
+  font-family:"Gill Sans", helvetica, arial, sans-serif ! important;
+}
+
+p.submit {
+  text-align:center;
+  margin-top:10px;
+  width:100%;
+  overflow:hidden;
+}
+
+.submit input {
+  font-size:16px;
+}
+
+
+/*-----------------------------------------------------
+            >> Search and Tag Cloud <<
+-----------------------------------------------------*/
+
+.search form {
+  width:100%;
+}
+input#query {
+  width: 100px;
+}
+
+div.tags {
+  overflow:hidden;
+  margin-bottom:24px;
+  height: 550px;
+}
+
+ul.tagCloud {
+  list-style:none;
+  padding:0;
+  margin:0;
+  text-transform:lowercase;
+  float:left;
+}
+ul.col0 {}
+
+
+/*-----------------------------------------------------
+                     >> Links <<
+-----------------------------------------------------*/
+
+ul.links, ul.links li p {
+  font-size: 11px;
+  line-height: 12px;
+  padding: 0px;
+  margin: 0;
+}
+ul.links {
+  margin-bottom: 24px;
+}
+
+ul.links li {
+  margin-bottom: 12px;
+}

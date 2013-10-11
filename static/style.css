@@ -1,0 +1,305 @@
+/*  
+
+References need to be: 
+
+url(/static/images/nomify.png)
+
+
+Possible fonts for site banner:
+http://www.google.com/fonts/#ReviewPlace:refine/Collection:Give+You+Glory|The+Girl+Next+Door|Swanky+and+Moo+Moo|Waiting+for+the+Sunrise|Reenie+Beanie|Gloria+Hallelujah|Nothing+You+Could+Do|Over+the+Rainbow|Loved+by+the+King|Annie+Use+Your+Telescope
+*/
+
+
+body { 
+	margin-bottom: 50px; 	
+	font-family: 'Libre Baskerville', serif;
+}
+/*-----------------------------------------------------
+                  >> Basic Typography <<
+-----------------------------------------------------*/
+h1 {
+  font-family: 'Over the Rainbow', cursive;
+  font-size: 48px;
+  text-align: center;
+  -webkit-text-shadow: 2px 2px 2px rgba(68,68,68, 0.5);
+     -moz-text-shadow: 2px 2px 2px rgba(68,68,68, 0.5); 
+       -o-text-shadow: 2px 2px 2px rgba(68,68,68, 0.5); 
+          text-shadow: 2px 2px 2px rgba(68,68,68, 0.5);	
+	}
+	h1 a { 
+		color: #444;
+		}
+		h1 a:hover { 
+			color: #2A6496; 
+			text-decoration: none; 
+			-webkit-transition: color 150ms linear;
+			   -moz-transition: color 150ms linear;
+						  transition: color 150ms linear;
+			}
+h2 { 
+	font-family: 'Over the Rainbow', cursive;
+	/*font-family: 'Telex', sans-serif;*/
+	}
+	h2 a { 
+		color: #2C384F; 
+		}
+		h2 a:hover {
+			-webkit-transition: color 150ms linear;
+			   -moz-transition: color 150ms linear;
+						  transition: color 150ms linear;
+		}
+	h2 span.date { 
+	  font-family: "Gill Sans", Helvetica, Arial, sans-serif;
+		color: #A04469; 
+		font-size: 50%;
+		}
+.tags h2 {
+	text-align: left; 
+	margin-left: 40px;
+}
+/*-----------------------------------------------------
+                     >> Blog & News <<
+-----------------------------------------------------*/
+
+.post {
+  margin-bottom:24px;
+	}
+	.post p.divider {
+	  margin-top: 10px;
+	  height: 24px;
+	  background: 50% 50% no-repeat url(data:ding.gif;base64,R0lGODlhGAAYANUAAP///7FafDlJYtnc4bS6xIONnPLz9UVUa2p2iV5rf83R1+HBzevV3rVkhNy2xc6Xrfr09qivulFfdfDg5vXq7rpujHaBk8SDnL94lObL1ubo68mNpNisvY+YpoRTcpyksMHGzZpWdwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAAAAAAALAAAAAAYABgAAAbNQIBwSCwWIRSioWAwOjmVQAAjXCoQTadwEpVKGQDL9arRThpeL3iAiCQUkoHxnJY2hmw3XE681KUPRAoJegd8ABB/AQ1JRASEBwIHZQAUigtOBJECAh9Df5haBJwCCEIOaRUZWkMgFhICAwsBDxAMYKxGEQchDrm5Cx4HBL9aswsdAsTFRLMcQgXKzKe0RNEFzA/VSgmlWU4QGwEbTgawcU4TGFMQWgOcw0UZaIy5o5wdQxlqxdGcy34C+GLWTQA2AAwuDGS2xMKhaVqCAAA7);
+		}
+
+.date {
+  font-family: "Gill Sans", Helvetica, Arial, sans-serif;  
+  line-height:0px;
+}
+
+
+p.numberComments {
+  font-family: "Gill Sans", Helvetica, Arial, sans-serif;
+  font-size:12px;
+  text-align:right;
+  margin-top:24px;
+  margin-bottom: 0px;
+  text-transform:none;
+}
+form.print {
+  font-size: 12px;
+  line-height:24px;
+  margin: 0;
+  color:#444;  
+  text-align: right;
+}
+
+.pagination {
+  margin-top:15px;
+  width:90%;
+  text-align:right;
+  font-size:11px;
+}
+
+.pagination ul {
+  margin-top:4px;
+  float:right;
+  list-style:none;
+  font-size:11px;
+}
+
+.pagination ul li {
+  border-right:1px solid #444;
+  padding:0 4px;
+  float:left;
+}
+
+div.bio {
+  width:100%;
+  padding:14px 12px 12px 12px;
+  height:70px;
+  position:relative;
+  overflow:hidden;
+  margin:0 -11px 48px -11px;
+  background-color:#E6F5F3;
+}
+
+div.bio img {
+  float:left;
+  margin:0 12px 0 0;
+  border:1px solid #eee;
+}
+
+div.bio p {
+  float:left;
+  margin-top:8px;
+  width:390px;
+  font-size:13px;
+  line-height:16px;    
+  font-family: "Gill Sans", Helvetica, Arial, sans-serif;  
+}
+
+div.contributors {
+  margin:48px 0;
+  padding-bottom:30px;
+}
+
+div.contributors img {
+  float:left;
+  margin:0 12px 5px 0;
+}
+
+div.recent, div.tags {
+  text-align:center;
+}
+
+.recent ul, .archive ul, ul.links, ul.tagCloud {
+  list-style-type:none;
+}
+
+.archive ul, ul.links, ul.tagCloud {
+  width:100%;
+  text-align:left;
+}
+
+.archive ul {
+  text-align:center;
+}
+/*-----------------------------------------------------
+                     >> Comments <<
+-----------------------------------------------------*/
+
+/* Comment form */
+
+.date, .hidePreview {
+  font-size:70%;
+  color:#000;
+  padding-left:4px;
+}
+form.comments {
+  background:#eee;
+  padding:9px 10px;
+  position:relative;
+  margin:48px -10px 0 -10px;
+}
+
+form.comments h3 {
+  margin:0;
+  color:#444;
+}
+
+form.comments div.details {
+  float:left;
+  width:40%;
+  padding:0;
+}
+
+.details input {
+  margin:0;
+  width:100%;
+  font-size:14px;
+}
+
+form.comments div.comment {
+ float:right;
+ width:54%;
+ margin-bottom:0px;
+ padding-left:0;
+ border:0;
+}
+
+.comment textarea {
+  width:100%;
+}
+
+form.comments small {
+  float:right;
+  font-size:11px;
+  display:block;
+  margin-top:0;
+}
+
+form.comments p.submit {
+  padding-top:18px;
+  clear:both;
+  margin-bottom:0;
+}
+
+#commentPreview p {
+  color:#B15A7C;
+}
+
+
+/* Comment display */
+
+h2.commentsHeader {
+  margin-top:48px;
+  font-size:16px;
+  line-height:24px;
+}
+
+h4.commentsPreview {
+  text-align:left;
+}
+
+.preview img {
+  margin:0 auto;
+}
+
+div.comment {
+  color:#374454;  
+  margin-bottom:24px;
+  border-left:1px solid #ccc;
+  padding-left:10px;
+  margin-left:1px;
+}
+
+div.comment a {
+  text-decoration:none;
+}
+
+div.comment p {
+  color:#374454;
+  font-family:"Gill Sans", helvetica, arial, sans-serif;
+  font-size:13px;
+  line-height:24px;  
+  width:75%;
+  margin-bottom:24px;
+}
+
+p.commenter {
+  font-size:13px;
+  line-height:24px;
+  margin-bottom:0px ! important;
+  color:#374454;
+}
+
+.numberComments {
+  margin-top:30px;
+  text-transform:uppercase;
+}
+
+
+/*-----------------------------------------------------
+                     >> Events <<
+-----------------------------------------------------*/
+
+.event {
+  margin-bottom:50px;
+}
+
+/*-----------------------------------------------------
+            >> Search and Tag Cloud <<
+-----------------------------------------------------*/
+ul.tagCloud {
+  list-style:none;
+}
+
+/*-----------------------------------------------------
+                     >> Links <<
+-----------------------------------------------------*/
+
+ul.links, ul.links li p {
+  padding: 0px;
+  margin: 0;
+}
+ul.links { margin-bottom: 24px; }
+ul.links li { margin-bottom: 12px; }

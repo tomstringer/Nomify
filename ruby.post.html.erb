@@ -1,0 +1,19 @@
+<%# Available:
+
+  list_posts(@post): Marked up display of this post
+  @post.title
+  @post.publish_on
+  @post.content_markup
+  
+%>
+
+
+<div class="content">
+  <div class="post">  
+    <h2>
+      <%= link_to_news_post(@post.title, @post) %> 
+      <span class="date">[<%= @post.publish_on.strftime("%d.%m.%Y") %>]</span>      
+    </h2>
+    <%= @post.content_markup %>
+  </div>
+</div>​

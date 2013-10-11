@@ -1,0 +1,77 @@
+/*-----------------------------------------------------
+              >> Print Stylesheet <<        
+-----------------------------------------------------*/
+
+@page {
+  size: a4;
+  margin: 2cm;
+  font-size: 10pt;
+}
+
+/*body {
+  padding: 0px;
+  background:none;
+  color:#000;
+}*/
+
+a {
+  color:#fff;
+}
+/*
+.content {
+  width:180mm;
+}*/
+
+h1, h2, h3, h4 {
+  text-align:left;
+}
+
+/*ul {
+ margin-left:15mm;
+}*/
+
+
+/*-----------------------------------------------------
+                     >> Layout <<
+-----------------------------------------------------*/
+
+
+.top, 
+.footer, 
+.tagCloud, 
+form.comments, 
+p.numberComments, 
+.masthead,
+.second,
+.bio, 
+.date, 
+.print,
+.links
+form,
+.commentGuff
+img {
+  display:none;
+}
+
+h1, h2, h3, h4, h5, h6, a { 
+  color: #000;
+  font-weight: bold;
+  font-style: normal;
+}
+
+h2 {
+  font-size: 15pt;
+  margin-bottom: 2mm;
+}
+
+ul {
+  margin: 0 0 0 5mm;
+}
+
+p, ul, li {
+  width: 100%;
+}
+
+p, li {
+  color: #000;
+}
