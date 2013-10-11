@@ -48,7 +48,7 @@ h2 {
 			   -moz-transition: color 150ms linear;
 						  transition: color 150ms linear;
 		}
-	h2 span.date { 
+	h2 time { 
 	  font-family: "Gill Sans", Helvetica, Arial, sans-serif;
 		color: #A04469; 
 		font-size: 50%;
@@ -61,7 +61,7 @@ h2 {
                      >> Blog & News <<
 -----------------------------------------------------*/
 
-.post {
+article {
   margin-bottom:50px;
   padding-bottom: 40px;
   background: 50% 100% no-repeat url(data:ding.gif;base64,R0lGODlhGAAYANUAAP///7FafDlJYtnc4bS6xIONnPLz9UVUa2p2iV5rf83R1+HBzevV3rVkhNy2xc6Xrfr09qivulFfdfDg5vXq7rpujHaBk8SDnL94lObL1ubo68mNpNisvY+YpoRTcpyksMHGzZpWdwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAAAAAAALAAAAAAYABgAAAbNQIBwSCwWIRSioWAwOjmVQAAjXCoQTadwEpVKGQDL9arRThpeL3iAiCQUkoHxnJY2hmw3XE681KUPRAoJegd8ABB/AQ1JRASEBwIHZQAUigtOBJECAh9Df5haBJwCCEIOaRUZWkMgFhICAwsBDxAMYKxGEQchDrm5Cx4HBL9aswsdAsTFRLMcQgXKzKe0RNEFzA/VSgmlWU4QGwEbTgawcU4TGFMQWgOcw0UZaIy5o5wdQxlqxdGcy34C+GLWTQA2AAwuDGS2xMKhaVqCAAA7);
