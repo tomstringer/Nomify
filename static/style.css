@@ -66,13 +66,11 @@ article {
   padding-bottom: 40px;
   background: 50% 100% no-repeat url(data:ding.gif;base64,R0lGODlhGAAYANUAAP///7FafDlJYtnc4bS6xIONnPLz9UVUa2p2iV5rf83R1+HBzevV3rVkhNy2xc6Xrfr09qivulFfdfDg5vXq7rpujHaBk8SDnL94lObL1ubo68mNpNisvY+YpoRTcpyksMHGzZpWdwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAAAAAAALAAAAAAYABgAAAbNQIBwSCwWIRSioWAwOjmVQAAjXCoQTadwEpVKGQDL9arRThpeL3iAiCQUkoHxnJY2hmw3XE681KUPRAoJegd8ABB/AQ1JRASEBwIHZQAUigtOBJECAh9Df5haBJwCCEIOaRUZWkMgFhICAwsBDxAMYKxGEQchDrm5Cx4HBL9aswsdAsTFRLMcQgXKzKe0RNEFzA/VSgmlWU4QGwEbTgawcU4TGFMQWgOcw0UZaIy5o5wdQxlqxdGcy34C+GLWTQA2AAwuDGS2xMKhaVqCAAA7);
 	}
-
+/*
 .date {
   font-family: "Gill Sans", Helvetica, Arial, sans-serif;  
   line-height:0px;
-}
-
-
+}*/
 p.numberComments {
   font-family: "Gill Sans", Helvetica, Arial, sans-serif;
   font-size:12px;
@@ -94,20 +92,18 @@ form.print {
   width:90%;
   text-align:right;
   font-size:11px;
-}
-
-.pagination ul {
-  margin-top:4px;
-  float:right;
-  list-style:none;
-  font-size:11px;
-}
-
-.pagination ul li {
-  border-right:1px solid #444;
-  padding:0 4px;
-  float:left;
-}
+	}
+	.pagination ul {
+	  margin-top:4px;
+	  float:right;
+	  list-style:none;
+	  font-size:11px;
+		}
+		.pagination ul li {
+		  border-right:1px solid #444;
+		  padding:0 4px;
+		  float:left;
+			}
 
 div.bio {
   width:100%;
@@ -117,32 +113,29 @@ div.bio {
   overflow:hidden;
   margin:0 -11px 48px -11px;
   background-color:#E6F5F3;
-}
-
-div.bio img {
-  float:left;
-  margin:0 12px 0 0;
-  border:1px solid #eee;
-}
-
-div.bio p {
-  float:left;
-  margin-top:8px;
-  width:390px;
-  font-size:13px;
-  line-height:16px;    
-  font-family: "Gill Sans", Helvetica, Arial, sans-serif;  
-}
+	}
+	div.bio img {
+  	float:left;
+  	margin:0 12px 0 0;
+  	border:1px solid #eee;
+		}
+	div.bio p {
+  	float:left;
+	  margin-top:8px;
+	  width:390px;
+	  font-size:13px;
+		line-height:16px;    
+		font-family: "Gill Sans", Helvetica, Arial, sans-serif;  
+		}
 
 div.contributors {
   margin:48px 0;
   padding-bottom:30px;
-}
-
-div.contributors img {
-  float:left;
-  margin:0 12px 5px 0;
-}
+	}
+	div.contributors img {
+	  float:left;
+	  margin:0 12px 5px 0;
+		}
 
 div.recent, div.tags {
   text-align:center;
@@ -176,54 +169,45 @@ form.comments {
   padding:9px 10px;
   position:relative;
   margin:48px -10px 0 -10px;
+	}
+	form.comments h3 {
+	  margin:0;
+	  color:#444;
+		}
+	form.comments p.submit {
+		padding-top:18px;
+		clear:both;
+		margin-bottom:0;
+		}
+	form.comments small {
+		float:right;
+		font-size:11px;
+		display:block;
+		margin-top:0;
+		}
+	form.comments div.details {
+	  float:left;
+	  width:40%;
+	  padding:0;
+		}
+	form.comments div.comment {
+		float:right;
+		width:54%;
+		margin-bottom:0px;
+		padding-left:0;
+		border:0;
+		}
+.comment textarea {
+  width:100%;
 }
-
-form.comments h3 {
-  margin:0;
-  color:#444;
+#commentPreview p {
+  color:#B15A7C;
 }
-
-form.comments div.details {
-  float:left;
-  width:40%;
-  padding:0;
-}
-
 .details input {
   margin:0;
   width:100%;
   font-size:14px;
 }
-
-form.comments div.comment {
- float:right;
- width:54%;
- margin-bottom:0px;
- padding-left:0;
- border:0;
-}
-
-.comment textarea {
-  width:100%;
-}
-
-form.comments small {
-  float:right;
-  font-size:11px;
-  display:block;
-  margin-top:0;
-}
-
-form.comments p.submit {
-  padding-top:18px;
-  clear:both;
-  margin-bottom:0;
-}
-
-#commentPreview p {
-  color:#B15A7C;
-}
-
 
 /* Comment display */
 
@@ -232,43 +216,36 @@ h2.commentsHeader {
   font-size:16px;
   line-height:24px;
 }
-
 h4.commentsPreview {
   text-align:left;
 }
-
 .preview img {
   margin:0 auto;
 }
-
 div.comment {
   color:#374454;  
   margin-bottom:24px;
   border-left:1px solid #ccc;
   padding-left:10px;
   margin-left:1px;
-}
-
-div.comment a {
-  text-decoration:none;
-}
-
-div.comment p {
-  color:#374454;
-  font-family:"Gill Sans", helvetica, arial, sans-serif;
-  font-size:13px;
-  line-height:24px;  
-  width:75%;
-  margin-bottom:24px;
-}
-
+	}
+	div.comment a {
+	  text-decoration:none;
+		}
+	div.comment p {
+	  color:#374454;
+	  font-family:"Gill Sans", helvetica, arial, sans-serif;
+	  font-size:13px;
+	  line-height:24px;  
+	  width:75%;
+	  margin-bottom:24px;
+		}
 p.commenter {
   font-size:13px;
   line-height:24px;
   margin-bottom:0px ! important;
   color:#374454;
 }
-
 .numberComments {
   margin-top:30px;
   text-transform:uppercase;
